@@ -426,6 +426,90 @@
         </div>
       </section>
     </main>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-btn">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="text-modal">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="label-text">Name</label>
+            <div class="modal-input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="label-text">Phone</label>
+            <div class="modal-input-wrap">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="modal-input"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="label-text">Email</label>
+            <div class="modal-input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-input"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+            <div class="modal-field">
+              <label for="user-comment" class="label-text">Comment</label>
+              <textarea
+                name="comment"
+                id="user-comment"
+                placeholder="Text input"
+                class="modal-text"
+              ></textarea>
+            </div>
+            <div class="modal-field">
+              <input
+                type="checkbox"
+                name="privacy"
+                required
+                id="privacy"
+                class="modal-check visually-hidden"
+              />
+              <label for="privacy" class="check-text">
+                <span>
+                  <svg class="modal-check-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-choice"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="" class="check-link">Privacy Policy</a></label
+              >
+            </div>
+          </div>
+          <div class="send-btn">
+            <button class="modal-send-btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-logo-container">
@@ -469,6 +553,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe-container">
+          <p class="social-media-text">Subscribe</p>
+          <form class="subsc-form">
+            <label class="subsc-label">
+              <input
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+                class="subsc-input"
+              />
+            </label>
+            <button type="submit" class="sbsc-btn">
+              Subscribe
+              <svg class="subsc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
